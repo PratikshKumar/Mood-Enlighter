@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Little Happy World for Doctor Sahiba</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="floating-bg" id="floatingBg"></div>
+  <div class="stars" id="stars"></div>
+
+  <div class="modal" id="welcomeModal">
+    <div class="modal-content">
+      <h2>Hello Shikuliii 🌸</h2>
+      <p>
+        The world is softer, safer, and kinder because people like you exist.
+      </p>
+      <button class="big-button" id="enterWorldBtn">Enter your little happy world ✨</button>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <header class="hero">
+        <button class="night-toggle" id="nightToggleBtn">
+  🌙 Magic Button: Click here 
+</button>
+
+      <h1>For Shikuliii 🎀</h1>
+      <p>
+      A tiny universe for you when the world feels heavy : <br />
+filled with smiles, soft skies, cute animals, secret letters, a growing garden, and a peaceful night corner just for you.
+      </p>
+
+     <div class="hero-image">
+        <span class="float-deco deco-1">⭐</span>
+  <span class="float-deco deco-2">💗</span>
+  <span class="float-deco deco-3">✨</span>
+  <img src="doctor.png" alt="Cute Doctor Illustration">
+</div>
+
+      <div class="badge-row">
+        <span class="badge">🩺 Built with love</span>
+        <span class="badge">🌸 Mandatory smile breaks</span>
+        <span class="badge">🐾 Emergency cuteness care</span>
+        <span class="badge">🌙 Late-night comfort mode</span>
+      </div>
+    </header>
+
+    <p class="nav-helper">Tap any section below to explore your little happy world ✨</p>
+
+    <nav class="nav">
+      <button class="tab-btn active" data-tab="smile">🌸 Daily Smile</button>
+      <button class="tab-btn" data-tab="animals">🐼 Cute Animals</button>
+      <button class="tab-btn" data-tab="letters">💌 Secret Letters</button>
+      <button class="tab-btn" data-tab="garden">🌼 Garden</button>
+      <button class="tab-btn" data-tab="relax">🌙 Relax</button>
+    </nav>
+
+
+    <!-- DAILY SMILE -->
+    <section id="smile" class="active">
+      <div class="grid">
+
+        <div class="card">
+          <h2 class="section-title">Happi Happi </h2>
+
+          <button class="big-button" id="smileBtn">
+            Doctor Sahiba, Click Here for a Smile ✨
+          </button>
+
+          <div class="display-box" id="smileBox">
+            Press the button and let the website prescribe one unit of happiness 💊💖
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="section-title">Today’s Soft Reminder</h2>
+
+          <div class="display-box" id="dailyMessageBox"></div>
+
+          <div style="margin-top:16px;">
+            <button class="secondary-button" id="newReminderBtn">
+              Click here for Another reminder 🌷
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ANIMALS -->
+    <section id="animals">
+
+      <div class="grid">
+
+        <div class="animal-card">
+
+          <h2 class="section-title">Emergency Stress Relief</h2>
+
+          <button class="big-button" id="animalBtn">
+            Click here for a cute animal 🐾
+          </button>
+
+          <div class="display-box animal-display" id="animalBox">
+            <div>
+              <div class="animal-image">🐶</div>
+              <div class="animal-caption">
+                A tiny puppy is waiting to cheer for your next smile.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="animal-card">
+
+          <h2 class="section-title">Tap anywhere inside the box and your tiny pet will hop there with a cute reminder</h2>
+
+          <div class="pet-zone" id="petZone">
+            <div class="pet" id="pet">🐱</div>
+            <div class="pet-speech" id="petSpeech">
+              Take a break doctor 🩺
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- LETTERS -->
+    <section id="letters">
+
+      <h2 class="section-title">Secret Letters for You 💌</h2>
+
+      <div class="letters-grid">
+
+        <div class="letter">
+          <h3>🌸 Letter One</h3>
+          <button class="letter-btn" data-letter="1">Open letter</button>
+
+          <div class="hidden-letter" id="letter-1">
+            Dear Doctor Sahiba,<br><br>
+            Even on the days when the world feels too loud and your heart feels too full,
+            please remember this: your presence brings comfort to people.
+          </div>
+        </div>
+
+        <div class="letter">
+          <h3>🩺 Letter Two</h3>
+          <button class="letter-btn" data-letter="2">Open letter</button>
+
+          <div class="hidden-letter" id="letter-2">
+            You make the world a little brighter. Just by being you. <br />
+            Never forget how special you are.
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- GARDEN -->
+    <section id="garden">
+
+      <div class="garden">
+
+        <h2 class="section-title">Your Digital Healing Garden 🌼</h2>
+
+        <button class="big-button" id="plantBtn">Plant a flower 🌱</button>
+
+        <button class="secondary-button" id="clearGardenBtn">
+          Start fresh garden ✨
+        </button>
+
+        <div class="garden-ground" id="gardenGround"></div>
+
+        <div class="garden-note" id="gardenNote">
+          Click “Plant a flower” and watch your garden fill with tiny thank-yous.
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- RELAX -->
+   <section id="relax">
+  <h2 class="section-title">Late Night Calm Corner 🌙</h2>
+
+  <div class="breath-card">
+    <div class="breathing-circle" id="breathingCircle">
+      Breathe In
+    </div>
+
+    <p class="small-note" id="breathText">
+      Inhale for 4 • Hold for 4 • Exhale for 6 • Repeat gently ✨
+    </p>
+
+    <button class="music-btn" id="musicBtn">
+      Play soft chime 🎵
+    </button>
+
+    <button class="music-btn" id="calmMessageBtn">
+      Click here for a Calm message 🌌
+    </button>
+
+    <div class="display-box" id="calmBox">
+      This space is yours. Just breathe.
+    </div>
+  </div>
+</section>
+
+
+    <div class="footer-note">
+        Made by : PRATISH <br />
+      Made like a tiny pastel hug for a very hardworking doctor 💖
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
